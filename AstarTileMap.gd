@@ -11,9 +11,9 @@ enum pairing_methods {
 	SZUDZIK_IMPROVED,	# improved version (best option)
 }
 
-export(pairing_methods) var current_pairing_method = pairing_methods.SZUDZIK_IMPROVED
+@export var current_pairing_method:pairing_methods = pairing_methods.SZUDZIK_IMPROVED
 
-export var diagonals := false
+@export var diagonals := false
 
 var astar := AStar2D.new()
 var obstacles := []

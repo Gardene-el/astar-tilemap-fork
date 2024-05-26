@@ -1,6 +1,7 @@
 extends Control
 
-export(NodePath) @onready var board = get_node(board)
+@export var board_path:NodePath
+@onready var board = get_node(board_path)
 @onready var astar = board.astar if board else null
 
 
