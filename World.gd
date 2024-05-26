@@ -1,9 +1,9 @@
 extends Node2D
 
-onready var board = $Board
-onready var astarDebug = $AstarDebug
-onready var player = $Board/Player
-onready var line = $Line
+@onready var board = $Board
+@onready var astarDebug = $AstarDebug
+@onready var player = $Board/Player
+@onready var line = $Line
 
 func _input(event):
 	if event.is_action_pressed("mouse_left"):
